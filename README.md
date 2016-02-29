@@ -6,7 +6,7 @@ Este proyecto consiste en una implementación de WolframAlpha en conjunto con Op
 * Perimite saber la temperatura, humedad y presión de cualquier ciudad de la Argentina
 * Permite conocer la temperatura de la CPU de la Raspberry Pi
 
-Se utiliza para responder pedidos a un Numero 'X' del Servicio de Whatsapp.
+"Se utiliza para responder pedidos a un Numero 'X' del Servicio de Whatsapp, este sistema no realiza envíos masivos "
 
 ### REQUISITOS:
 - Raspberry Pi Model B (y posteriores, Model B+,Model 2B, Zero, Model 3)
@@ -16,11 +16,11 @@ Se utiliza para responder pedidos a un Numero 'X' del Servicio de Whatsapp.
 - Una cuenta en Wolfram Alpha para obtener un API_K
  
 
-- Python 2.7 -> 
+- Python 2.7 
 ```
 sudo apt-get install python
 ```
-- WolframAlpha_API ->
+- WolframAlpha_API
 ```
 pip install wolframalpha
 ```
@@ -28,7 +28,7 @@ pip install wolframalpha
 ```
 pip install pyowm
 ```
--Yowsup 2.7 -> 
+-Yowsup 2.7
 ```
 pip install yowsup
 ```
@@ -39,8 +39,7 @@ Primero deben registrar una cuenta de Whatsapp utilizando una tarjeta SIM para r
 Una vez obtenido la clave, deberán adecuar el Run.py de acuerdo a sus credenciales
 Luego deben modificar El [Layer.py](https://github.com/juanchip/Albert_Pi/blob/master/layer.py) para adecuarlo a las Keys generadas
 por ustedes.
-
-Luego es cuestión de añadir el contacto a su app de whatsapp y listo!
+Finalmente, añaden el contacto generado a su lista de contactos de whatsapp y listo!
 
 ### Licencia
 
