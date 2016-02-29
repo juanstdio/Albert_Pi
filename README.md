@@ -35,9 +35,8 @@ Todo aquello que no tenga respuesta, será respondido con un mensaje de error qu
 - Raspberry Pi Model B (y posteriores, Model B+,Model 2B, Zero, Model 3)
 - Una conexión a internet lo suficientemente estable vía LAN (NO recomiendo el uso de Modems 3G, ni Wi-Fi)
 - Una IP fija
-- Una cuenta GRATUITA en Open Weather Map para obtener una Key
+- Una cuenta GRATUITA en Open Weather Map
 - Una cuenta en Wolfram Alpha para obtener un API_K
- 
 - Python 2.7 
 ```
 sudo apt-get install python
