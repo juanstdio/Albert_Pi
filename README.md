@@ -16,16 +16,29 @@ Se utiliza para responder pedidos a un Numero 'X' del Servicio de Whatsapp.
 - Una cuenta en Wolfram Alpha para obtener un API_K
  
 
-- Python 2.7 -> sudo apt-get install python
-- WolframAlpha_API -> pip install wolframalpha
-- PyOWM -> pip install pyowm
-- Yowsup 2.7 -> pip install yowsup
-
+- Python 2.7 -> 
+```
+sudo apt-get install python
+```
+- WolframAlpha_API ->
+```
+pip install wolframalpha
+```
+- PyOWM -> 
+```
+pip install pyowm
+```
+-Yowsup 2.7 -> 
+```
+pip install yowsup
+```
 
 ### ¿ Como usarlo ? 
 
 Primero deben registrar una cuenta de Whatsapp utilizando una tarjeta SIM para recibir un SMS, usando los comandos que se te detallan en la Wiki de YowSup.
 Una vez obtenido la clave, deberán adecuar el Run.py de acuerdo a sus credenciales
+Luego deben modificar El [Layer.py](https://github.com/juanchip/Albert_Pi/blob/master/layer.py) para adecuarlo a las Keys generadas
+por ustedes.
 
 Luego es cuestión de añadir el contacto a su app de whatsapp y listo!
 
