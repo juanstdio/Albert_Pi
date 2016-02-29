@@ -62,7 +62,13 @@ Primero deben registrar una cuenta de Whatsapp utilizando una tarjeta SIM para r
 Una vez obtenido la clave, deberán adecuar el Run.py de acuerdo a sus credenciales
 Luego deben modificar El [Layer.py](https://github.com/juanchip/Albert_Pi/blob/master/layer.py) para adecuarlo a las Keys generadas
 por ustedes.
-Finalmente, añaden el "numero" a su lista de contactos de whatsapp y listo!
+Finalmente, añaden el "numero" a su lista de contactos de whatsapp.
+
+y luego ejecutan
+```
+python run.py
+```
+
 
 Agradecimientos especiales a:
 * [tgalal](https://github.com/tgalal) 
