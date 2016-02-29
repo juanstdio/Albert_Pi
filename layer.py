@@ -77,6 +77,43 @@ class EchoLayer(YowInterfaceLayer):
                 time.sleep(1)
                 os.system("twitter set Me ha consultado " + nombre + "...")
                 time.sleep(1)
+        elif 'Wa ' in mensaje:
+                id= 'XXXXXXXXXX-XXXXX' #Aca va la id que tenes de wolfram, si queres ponersela te tenes que registrar
+                file = open('HistorialWA.txt', 'a')
+                client = wolframalpha.Client(id)
+                self.toLower(TextMessageProtocolEntity("Mathematica está calculando...", to=para))
+            try:
+                ParaWolfram = mensaje.split(" ")
+                res = client.query(str(ParaWolfram[1]+' '+(ParaWolfram[2])))
+                #Esto viene a ser un registro para saber quien fue
+                # el que calculó,solo por seguridad
+                file.write(str(ParaWolfram[1]+' '+(ParaWolfram[2])))
+                file.write("|")
+                file.write(time.strftime("%d/%m/%y"))
+                file.write("|")
+                file.write(time.strftime("%H:%M:%S"))
+                file.write("|")
+                file.write(para)
+                file.write("|")
+                file.write(nombre)
+                file.write("\n")
+                if len(res.pods) > 0:
+                    texts = ""
+                    pod = res.pods[1]
+                if pod.text:
+                    texts = pod.text
+                    texts = texts.encode('ascii', 'ignore')
+                    self.toLower(TextMessageProtocolEntity("Resultado:", to=para))
+                    self.toLower(TextMessageProtocolEntity(texts, to=para))
+                else:
+                    texts = "No Tengo respuesta: Atte Don Wolfram."
+                    self.toLower(TextMessageProtocolEntity(texts, to=para))
+            except NameError:
+                # Si me da el error de Pot
+                self.toLower(TextMessageProtocolEntity("Comando Wa inválido\nError de Nombres", to=para))
+            except IndexError:
+                # Si Se Va de rango..(en las derivadas /integrales pasa..)
+                self.toLower(TextMessageProtocolEntity("Comando Wa inválido\nindice fuera de rango", to=para))
         elif mensaje == 'Gracias':
                 msg10 = "Estoy siendo programado, teneme paciencia"
                 time.sleep(1)
