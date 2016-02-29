@@ -38,7 +38,6 @@ Todo aquello que no tenga respuesta, será respondido con un mensaje de error qu
 - Una cuenta GRATUITA en Open Weather Map para obtener una Key
 - Una cuenta en Wolfram Alpha para obtener un API_K
  
-
 - Python 2.7 
 ```
 sudo apt-get install python
