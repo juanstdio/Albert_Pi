@@ -28,7 +28,7 @@ Wa Arg1 Arg2
 ```
 Realiza las operaciones indicadas en Arg1 y Arg2
 
-Todo aquello que no tenga respuesta, será respondido con un mensaje de 
+Todo aquello que no tenga respuesta, será respondido con un mensaje de error que no se ha encontrado
 
 
 ### REQUISITOS:
@@ -65,8 +65,8 @@ por ustedes.
 Finalmente, añaden el "numero" a su lista de contactos de whatsapp y listo!
 
 Agradecimientos especiales a:
-[tgalal](https://github.com/tgalal) 
-[marcoshuck](https://github.com/marcoshuck)
+* [tgalal](https://github.com/tgalal) 
+* [marcoshuck](https://github.com/marcoshuck)
 
 ### Licencia
 
